@@ -1,6 +1,6 @@
 {% set name = "multidict" %}
-{% set version = "4.2.0" %}
-{% set sha256 = "24052724195e46872739faa10c611957bbaceae28eec92e1ce49150b115ec5ed" %}
+{% set version = "4.3.1" %}
+{% set sha256 = "5ba766433c30d703f6b2c17eb0b6826c6f898e5f58d89373e235f07764952314" %}
 
 package:
   name: {{ name|lower }}
