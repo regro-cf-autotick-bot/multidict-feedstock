@@ -15,14 +15,16 @@ Multidicts are useful for working with HTTP headers, URL query args etc.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/multidict-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/multidict-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/multidict-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/multidict-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/multidict-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/multidict-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/multidict-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/multidict-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/multidict-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/multidict-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/multidict-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/multidict-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/multidict/badges/version.svg)](https://anaconda.org/conda-forge/multidict)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/multidict/badges/downloads.svg)](https://anaconda.org/conda-forge/multidict)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-multidict-green.svg)](https://anaconda.org/conda-forge/multidict) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/multidict.svg)](https://anaconda.org/conda-forge/multidict) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/multidict.svg)](https://anaconda.org/conda-forge/multidict) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/multidict.svg)](https://anaconda.org/conda-forge/multidict) |
 
 Installing multidict
 ====================
