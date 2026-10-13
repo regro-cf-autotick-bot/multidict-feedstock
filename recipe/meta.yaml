@@ -42,6 +42,7 @@ test:
     - pytest
     - pytest-codspeed
     - objgraph
+    - coverage
     - pip
     - psutil
     - python {{ python_min }}  # [use_noarch]
