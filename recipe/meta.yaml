@@ -47,8 +47,10 @@ test:
     - psutil
     - python {{ python_min }}  # [use_noarch]
   commands:
-    - py.test tests --no-c-extensions  # [use_noarch]
-    - py.test tests --c-extensions     # [not use_noarch]
+    # The release notes converter test needs the `tools/` directory which is
+    # not shipped in the test source files; skip it here.
+    - py.test tests --no-c-extensions --ignore=tests/test_release_notes_md.py  # [use_noarch]
+    - py.test tests --c-extensions --ignore=tests/test_release_notes_md.py     # [not use_noarch]
     - pip check
 
 about:
