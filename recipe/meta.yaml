@@ -1,12 +1,12 @@
-{% set version = "6.7.1" %}
+{% set version = "6.8.0" %}
 
 package:
   name: multidict
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/m/multidict/multidict-{{ version }}.tar.gz
-  sha256: ec6652a1bee61c53a3e5776b6049172c53b6aaba34f18c9ad04f82712bac623d
+  url: https://files.pythonhosted.org/packages/source/m/multidict/multidict-{{ version }}.tar.gz
+  sha256: 5cd4637ce76312ba1e05eb9c5193fec231f64fee0944e135fa1e951242355b37
 
 build:
   number: 0
@@ -42,6 +42,7 @@ test:
     - pytest
     - pytest-codspeed
     - objgraph
+    - coverage
     - pip
     - psutil
     - python {{ python_min }}  # [use_noarch]
