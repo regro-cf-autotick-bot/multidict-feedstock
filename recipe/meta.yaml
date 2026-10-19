@@ -1,4 +1,4 @@
-{% set version = "6.9.0" %}
+{% set version = "6.9.1" %}
 
 package:
   name: multidict
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/m/multidict/multidict-{{ version }}.tar.gz
-  sha256: d7d32c0543494efbc9394e2b571725071d08e295993486bc9a43f6f89375ee01
+  sha256: 0f06e60fa190aa7abd0914c2a766736fdc8e9f34878c4346338534b73d1b20e2
 
 build:
   number: 0
