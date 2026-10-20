@@ -1,0 +1,28 @@
+From cb387d388a4e0284f3b8d97bb83b9577aaedf707 Mon Sep 17 00:00:00 2001
+From: conda-forge <conda-forge@example.com>
+Date: Tue, 20 Oct 2026 08:19:07 +0000
+Subject: [PATCH] Do not build with -Werror
+
+conda-forge builds with newer clang on macOS, where multidict 7.1.0
+triggers -Wsign-conversion in multidict/_multilib/htkeys.h. Since the
+build already carries an explicit clang pin for similar reasons and
+warnings should not break downstream packaging, drop -Werror.
+---
+ setup.py | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 3745c0e..68f5924 100644
+--- a/setup.py
++++ b/setup.py
+@@ -34,7 +34,6 @@ if platform.system() != "Windows":
+             "-Wsign-compare",
+             "-Wconversion",
+             "-fno-strict-aliasing",
+-            "-Werror",
+         ]
+     )
+     if DEBUG_BUILD and (ASAN_BUILD or TSAN_BUILD):
+-- 
+2.43.0
+
