@@ -38,6 +38,8 @@ requirements:
 test:
   source_files:
     - tests
+    # tests/test_callgrind_driver.py imports the driver from benchmarks/
+    - benchmarks
   requires:
     - pytest
     - pytest-codspeed
