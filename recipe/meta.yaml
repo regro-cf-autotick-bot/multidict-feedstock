@@ -13,7 +13,7 @@ source:
     - patches/0001-Do-not-build-with-Werror.patch
 
 build:
-  number: 0
+  number: 1
   noarch: python  # [use_noarch]
   track_features:
     - multidict_no_compile  # [use_noarch]
