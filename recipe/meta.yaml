@@ -1,4 +1,4 @@
-{% set version = "7.1.0" %}
+{% set version = "7.2.0" %}
 
 package:
   name: multidict
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/m/multidict/multidict-{{ version }}.tar.gz
-  sha256: 61a4e5d81b8d4e4ad61964b230129e7a2b914793d96289029078fc9009f074ec
+  sha256: f4110a13e264858eb00697751785cb2c58ee96707d8ded5ddb8239530d3b9ba4
   patches:
     # multidict 7.1.0 fails to compile with newer clang on macOS because
     # -Werror turns -Wsign-conversion in _multilib/htkeys.h into an error.
